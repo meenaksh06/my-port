@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/0a4798b76d.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="header" class="header">
+        <div class="container">
+            <nav>
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#About">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa fa-circle-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Frontend Developer</p>
+                <h1>Hi, Myself <span>Meenaksh</span> <br>Singhania</h1>
+            </div>
+        </div>
+    </div>
+    <!-- ----about----- -->
+    <div id="About" class="About">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/linkedin image.jpeg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p class="about-text">Enthusiastic and motivated currently second-year student at Newton School
+                        Of Technology eager to contribute my skills and passion for computer science field.
+                        My academic pursuits have equipped me with a strong grasp of algorithmic principles and software
+                        development methodologies.
+                        Eager to apply strong problem-solving skills developed through coursework and to improve my
+                        learnings in realistic manner.
+                    </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab(event, 'skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab(event, 'experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab(event, 'education')">Education</p>
+                    </div>
+                    <div id="skills" class="tab-contents active-tab">
+                        <ul>
+                            <li><span>UI/UX</span><br>Designing Web/App Interfaces</li>
+                            <li><span>Web Development</span><br>Web App Development</li>
+                            <li><span>App Development</span><br>Building Android/ios apps</li>
+                        </ul>
+                    </div>
+                    <div id="experience" class="tab-contents">
+                        <ul>
+                            <li><span>Open Source Contributor</span><br>Web App Development</li>
+                            <li><span>Project Contributor</span><br>Frontend Development</li>
+                        </ul>
+                    </div>
+                    <div id="education" class="tab-contents">
+                        <ul>
+                            <li><span>2023-2027</span><br>B.Tech in Computer Science & Artificial Intelligence</li>
+                            <li><span>2022</span><br>Intermediate From K.D.B Public School</li>
+                            <li><span>2020</span><br>Matriculation From St Mary's Convent School</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- -----Services----- -->
+    <div id="services" class="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>I specialize in crafting custom, user-centric web designs that are responsive, SEO-friendly, and
+                        aligned with your brand identity.
+                        My designs prioritize performance, accessibility, and interactive elements to ensure a seamless
+                        user experience.
+                        I offer ongoing support and work collaboratively to bring your vision to life.
+                    </p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop"></i>
+                    <h2>UI/UX Design</h2>
+                    <p>I excel in creating intuitive, user-friendly interfaces that enhance user engagement and
+                        satisfaction.
+                        My approach ensures seamless interaction and a cohesive experience across all devices.
+                        I focus on user research, wireframing, prototyping, and testing to deliver designs that are both
+                        aesthetically pleasing and highly functional, always keeping the end-user in mind.
+                    </p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-app-store"></i>
+                    <h2>App Development</h2>
+                    <p>I specialize in developing high-performance, cross-platform mobile apps that deliver seamless
+                        user experiences on both Android and iOS devices.
+                        My approach includes comprehensive planning, intuitive UI/UX design, robust backend development,
+                        and rigorous testing to ensure reliability and efficiency.
+                        I am dedicated to creating innovative apps that meet your business goals and provide ongoing
+                        support to keep your app updated and secure.
+                    </p>
+                    <a href="#">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ----portfolio---- -->
+    <div id="portfolio" class="portfolio">
+        <div class="container">
+            <h1 class="sub-title">Portfolio</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/2048.png">
+                    <div class="layer">
+                        <h3>2048 Game</h3>
+                        <p>2048 is a popular puzzle game that involves sliding numbered tiles on a grid to combine them and create a tile with the number 2048.                        </p>
+                        <a href="https://github.com/meenaksh06/2048-Project
+                        "><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/Job.png">
+                    <div class="layer">
+                        <h3>Job Listing Website</h3>
+                        <p>A job listing website provides a platform for employers to post job openings and for job seekers to search and apply for positions.
+                        </p>
+                        <a href="https://github.com/meenaksh06/Midsem-Project-Job-Listing-Website
+                        "><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/tic.png">
+                    <div class="layer">
+                        <h3>Tic Tac Toe Game</h3>
+                        <p>Tic Tac Toe is a classic game that involves placing X and O symbols on a 3x3 grid to create a line of three matching symbols horizontally, vertically, or diagonally.</p>
+                        <a href="https://github.com/meenaksh06/Tic-Tac-Toe-Project
+                        "><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div id="more-works" class="work">
+                    <img src="images/disney.png">
+                    <div class="layer">
+                        <h3>Disney Hotstar</h3>
+                        <p>Disney+ Hotstar is a popular streaming platform offering a diverse range of movies, TV shows, and original content from Disney, Pixar, Marvel, Star Wars, and more. Users can access a vast library of entertainment through subscription-based plans, enjoying content anytime, anywhere.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/linkedin.png">
+                    <div class="layer">
+                        <h3>LinkedIn Clone</h3>
+                        <p>LinkedIn is a professional networking platform that connects individuals and businesses worldwide. It facilitates career growth, job opportunities, and professional development through profiles, networking tools, industry insights, and educational resources.</p>
+                        <a href=" https://github.com/meenaksh06/Linkedin-Clone-Project
+                        "><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/twitter.png">
+                    <div class="layer">
+                        <h3>Twitter Clone</h3>
+                        <p>Twitter is a social networking platform that connects individuals and organizations globally. It enables real-time communication, information sharing, and engagement through tweets, hashtags, and trending topics, fostering community interaction and public discourse.</p>
+                        <a href="https://github.com/meenaksh06/Twitter-Clone-Project"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn" id="expand-btn">See more</a>
+        </div>
+    </div>
+    <!-- ---contact--- -->
+    <div id="contact" class="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>meenaksh.s23csai@nst.rishihood.edu.in</p>
+                    <p><i class="fa-sharp fa-solid fa-square-phone"></i>+91 9990709830</p>
+                    <div class="social-icons">
+                        <!-- we can add our profile link in href -->
+                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/meenaksh_0604/"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/meenaksh-singhania-143840283/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="#"><i class="fa-brands fa-square-twitter"></i></a>
+                    </div>
+                    <!-- to download cv -->
+                    <a href="/images/Meenaksh Resume (1).pdf" download class="btn btn2">Download CV</a>
+                </div>
+
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright © @Meenaksh.Portfolio</p>
+        </div>
+    </div>
+
+
+    <script>
+        var tablinks = document.getElementsByClassName('tab-links');
+        var tabcontents = document.getElementsByClassName('tab-contents');
+
+        function opentab(event, tabname) {
+            for (let tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (let tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+
+    <script>
+
+        var sidemeu = document.getElementById("sidemenu");
+
+        function openmenu() {
+            sidemeu.style.right = "0";
+        }
+
+        function closemenu() {
+            sidemeu.style.right = "-200px";
+        }
+
+    </script>
+
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbw89BV2uc_OlyrQk0kR2tVOEmhzRRoCC9KU9s6MWkbA_e2OX7-7t3eHWU_3LL7bQEfB/exec';
+        const form = document.forms['submit-to-google-sheet'];
+        const msg = document.getElementById('msg'); // Ensure this references the correct element
+    
+        form.addEventListener('submit', e => {
+            e.preventDefault();
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => {
+                    msg.innerHTML = "Successfully Submitted";
+                    setTimeout(function() {
+                        msg.innerHTML = "";
+                    }, 5000);
+                    form.reset();
+                })
+                .catch(error => console.error('Error!', error.message));
+        });
+    </script>
+    
+
+</body>
+
+</html>
